@@ -54,8 +54,8 @@ export default function Home() {
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
 
       {/* Glassmorphic Form */}
-      <div className="relative z-20 max-w-lg w-full mx-4 p-8 sm:p-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">
+      <div className="relative z-20 max-w-lg w-full mx-4 p-8 sm:p-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg text-center mt-10 sm:mt-0">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
           Color grade your videos with <span className="text-blue-400">AI</span>
         </h1>
         <p className="text-gray-200 mb-6">Join the waitlist to get notified on release</p>
