@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
+
 export default function Home() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,8 +29,10 @@ export default function Home() {
 
       setSuccessMessage("🎉 You're on the list! We'll notify you soon.");
       setEmail("");
-    } catch (error: any) {
-      setSuccessMessage(error.message || "Something went wrong. Please try again.");
+    } catch (error: unknown) {
+      if(error instanceof Error) {
+        setSuccessMessage(error.message || "Something went wrong. Please try again.");
+      }
     } finally {
       setLoading(false);
     }
